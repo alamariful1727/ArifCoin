@@ -1,0 +1,27 @@
+user 1
+{
+    "messages": "New keys generated!!",
+    "publicKey": "04ae05961ecac017d4db4026c2413bc3049d3d1a9504b9eb5a13756351704bc252e56a0009dcd0582b16bd806282381e11c47d745b133391351f86e5e17a2bf2fd",
+    "privateKey": "d5a485805ac46ee941a87732f9a05133c27b39545f3cc49b538ad3547005f83f"
+}
+
+user 2
+{
+    "messages": "New keys generated!!",
+    "publicKey": "0405b6e40c1d0b994f4b92c480569c2319aafbd14d5875621873f2ac36ca8cc70ee462d9dd4af1a7e48c1a1b426f268213825d13bbb12b43c16e2080666d1ee922",
+    "privateKey": "025665546e452df87c6d113faafb7da25af3f9efc1742d53036ac750b8ac80af"
+}
+
+user 3
+{
+    "messages": "New keys generated!!",
+    "publicKey": "04a2a5a7f4da5b0b36563724de21947c557258df03d14e4346f174f282754414cde0c5ed91f9cc2acafbafe35628d9249f93b975aa2b52ff1b1fabf4238ec05f57",
+    "privateKey": "5d5ce38cc1153e2f386ec39f99620f520230796326db5a9cdd3aee892e62cea4"
+}
+
+user 4
+{
+    "messages": "New keys generated!!",
+    "publicKey": "04b734671c597ceeef0a802c45cd54d9f8ac2932c3d5dc39693660c17e1d1dd44dfa7804022d08bbff2ae012a73117979f033e7564d12ab9dd18a7a14c8b4b6670",
+    "privateKey": "99f11052af232caeec0d675875a97b5e708fe0fcac44b2726ba6a12bd371dbd9"
+}
