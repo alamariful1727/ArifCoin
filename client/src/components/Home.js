@@ -1,57 +1,36 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { getChain } from './../actions/arifCoin.action';
+import { Blockchain } from './arifCoin/Blockchain';
 
 class Home extends Component {
-	state = {
-		counter: 0
-	};
+  componentDidMount() {
+    this.props.getChain();
+  }
+  render() {
+    const { auth, arifCoin } = this.props;
+    const { blockchain } = arifCoin;
 
-	render() {
-		const { auth } = this.props;
-
-		let user;
-		// let friends;
-		if (auth.isAuthenticate) {
-			user = <h1>{auth.user.firstName}</h1>;
-			// auth.user.friends.forEach(friends => {
-			// 	<li>{friends}</li>;
-			// })
-			// friends = (
-			// 	<div>
-			// 		<h3>Friends list: </h3>
-			// 		<ul>
-			// 			<li>{auth.user.friends[0]}</li>
-			// 		</ul>
-			// 	</div>
-			// );
-		}
-
-		return (
-			<div>
-				<h1 className="text-center">Chat-rooms</h1>
-				<p>Members: {this.state.counter}</p>
-				{user}
-				{/* {friends} */}
-				<button
-					className="btn btn-info"
-					onClick={() => {
-						this.setState({ counter: this.state.counter + 1 });
-					}}
-				>
-					Increment
-				</button>
-			</div>
-		);
-	}
+    return (
+      <div>
+        <h1 className="text-center">ArifCoin's Chain!!</h1>
+        <Blockchain blockchain={blockchain} />
+      </div>
+    );
+  }
 }
 Home.propTypes = {
-	auth: PropTypes.object.isRequired,
-	isAuthenticated: PropTypes.bool
+  auth: PropTypes.object.isRequired,
+  arifCoin: PropTypes.object.isRequired,
+  getChain: PropTypes.func.isRequired,
 };
 const mapStateToProps = state => ({
-	auth: state.auth,
-	isAuthenticate: state.auth.isAuthenticate
+  auth: state.auth,
+  arifCoin: state.arifCoin,
 });
 
-export default connect(mapStateToProps)(Home);
+export default connect(
+  mapStateToProps,
+  { getChain },
+)(Home);

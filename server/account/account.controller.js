@@ -93,11 +93,10 @@ const getAccount = async (req, res) => {
 
 const logout = async (req, res) => {
   req.logout();
-  res.json({
+  return res.status(200).json({
     success: true,
     msg: 'You are successfully logout',
   });
-  res.end();
 };
 
 const accountUpdate = async (req, res, next) => {
