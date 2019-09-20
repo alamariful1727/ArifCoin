@@ -11,9 +11,10 @@
     "yarn": ">=1.5.1"
   },
   "scripts": {
-    "client": "cd client && npm start",
-    "startboth": "concurrently \"nodemon node index.js\" \"npm run client\"",
     "start": "nodemon node index.js",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
     "n2": " cross-env PORT=4041 nodemon node index.js"
   },
   "keywords": [

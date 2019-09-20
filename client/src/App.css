@@ -1,0 +1,23 @@
+.messages {
+	display: flex;
+	flex-direction: column;
+}
+.message {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+.message-mine {
+	align-self: flex-end;
+}
+.message-text {
+	border-radius: 20px;
+	padding: 8px 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: #e9ecef;
+	position: relative;
+}
+.message-text-mine {
+	background: #37f3ea;
+}
