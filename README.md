@@ -1,32 +1,20 @@
-# Tigrow
+# ArifCoin
 
-A social platform for the professionals. Every feed will be unique according to the differnet professions. 
-
+A simple blockchain which runs on PoW.
 
 ### Prerequisites
 
-You should install `Node`, `git` 
+You should install `Node`, `git`
 
 ### Installing
 
-`git clone this_url`
+`git clone https://github.com/alamariful1727/ArifCoin`
 
-`cd this_url`
-`yarn install`
-`yarn start`
-## Running the tests
-
-For running the test case use `yarn test`
-
-
-
-### And coding style tests
-
-run `yarn lint` to match with the coding style.
-
+`cd ArifCoin`
+`npm install`
+`npm start`
+For creating a node for the system `npm run n2`
 
 ## Authors
 
-* **Orvi** - *Initial work* 
-
-
+- **Ariful Alam** - _linkedin.com/in/alamariful1727_
