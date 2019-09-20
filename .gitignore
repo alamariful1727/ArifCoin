@@ -1,1 +1,10 @@
-node_modules
+/node_modules
+
+# testing
+/coverage
+
+# misc
+.DS_Store
+.env
+
+yarn-error.log*
